@@ -1,0 +1,95 @@
+/* Container */
+.Cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+/* Card */
+.Card{
+    width: 220px;
+    min-height: 120px;
+    margin: 6px;
+    padding: 14px;
+    background: linear-gradient(135deg, #111827 0%, #1f2937 60%);
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.35);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.Card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(2,6,23,0.45);
+}
+
+.Card h1{
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    color: #f3f4f6;
+    background: rgba(255,255,255,0.04);
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.Card p {
+    margin: 4px 0;
+    line-height: 1.35;
+}
+
+.Card p:first-of-type {
+    font-weight: 700;
+    color: #fff;
+}
+
+.Card p:last-of-type {
+    color: rgba(255,255,255,0.86);
+    font-size: 14px;
+}
+
+/* Actions */
+.Card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.Card-btn {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #111827;
+    box-shadow: 0 4px 10px rgba(2,6,23,0.12);
+    transition: transform 0.14s ease, background 0.14s ease, color 0.14s ease;
+}
+
+.Card-btn:hover {
+    transform: scale(1.06);
+    background: #111827;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .Cards-container { gap: 10px; padding: 10px; }
+    .Card { width: 100%; }
+}
+
+
+
+
